@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+body {
+    font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    border: 1px solid steelblue;
+    padding: 30px;
+    border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn {
+    display: inline-block;
+    background: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:focus {
+    outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.event {
+    background: #f4f4f4;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.event.reminder {
+    border-left: 5px solid green;
+}
+
+.event h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3 {
+    cursor: pointer;
+}
+
+.task {
+    background: #f2f2f2;
+}
+.task.reminder {
+    border-left: 5px solid green;
+}
+
+.task h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.task > * {
+    margin-left: 20px;
+}
+
+.add-form {
+    margin-bottom: 40px;
+}
+
+.form-control {
+    margin: 20px 0;
+}
+
+.form-control label {
+    display: block;
+}
+
+.form-control input {
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+}
+
+.form-control-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-control-check label {
+    flex: 1;
+}
+
+.form-control-check input {
+    flex: 2;
+    height: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
 }
